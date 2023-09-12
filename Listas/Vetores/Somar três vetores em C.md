@@ -1,0 +1,3 @@
+# Somar três vetores em C
+
+Crie um programa em C que deve receber três vetores do tipo int, denominados A, B e C, com um número específico de elementos mas todos do mesmo tamanho N. O programa deve solicitar inicialmente o tamanho do vetor e, em seguida, os respectivos elementos. Depois, deve-se calcular a soma dos elementos de cada posição correspondente nos vetores A, B e C e armazenar os resultados em um vetor D, de tamanho N. Por fim, o programa deve exibir os valores do vetor resultante D, separados por espaços. Certifique-se de implementar funções separadas para a leitura, soma e exibição dos vetores.
