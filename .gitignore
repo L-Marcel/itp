@@ -1,3 +1,9 @@
 output
 Provas/**/*.c
 .vscode/settings.json
+
+!Provas/Estruturas Condicionais/*.c
+!Provas/Estruturas de Repetição/*.c
+!Provas/Funções/*.c
+!Provas/Matrizes/*.c
+!Provas/Vetores/*.c
