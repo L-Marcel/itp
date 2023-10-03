@@ -36,3 +36,21 @@ int calcular_aposta(int largura, int altura, int bandeira[altura][largura], char
 ```
 
 Vale salientar que a entrada terá sempre como largura um número múltiplo de 3, o valor inicial será um valor não negativo e as letras serão sempre G (verde), Y (amarelo) ou R (vermelho) (representando as cores da bandeira).
+
+# Entrada / Saída
+
+```
+Entrada: 
+6 2 Y
+
+Saída:
+32
+```
+
+```
+Entrada:
+9 3 G
+
+Saída:
+72
+```

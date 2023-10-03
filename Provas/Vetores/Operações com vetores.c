@@ -4,7 +4,7 @@ void populate(int vector[3]) {
   for(int i = 0; i < 3; i++) {
     scanf("%d", &vector[i]);
   };
-      fflush(stdin);
+  fflush(stdin);
 };
 
 void calc(int A[3], int B[3], int C[3], int D[3]) {

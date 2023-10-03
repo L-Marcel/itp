@@ -12,4 +12,28 @@ Escreva um programa que implemente uma função que retorne o cálculo da média
 
 float calculaMedia(char tipo, float n1, float n2, float n3)
 
-onde tipo é pode ser 'A' para o cálculo da média aritmética ou 'P' para o cálculo da média ponderada com os pesos 4, 5 e 6, e n1, n2 e n3 são as notas das três unidades. A função main() deve pedir primeiro o tipo de média a ser calculada seguida das três notas e exibir o cálculo da média com duas casas decimais. 
+onde tipo é pode ser 'A' para o cálculo da média aritmética ou 'P' para o cálculo da média ponderada com os pesos 4, 5 e 6, e n1, n2 e n3 são as notas das três unidades. A função main() deve pedir primeiro o tipo de média a ser calculada seguida das três notas e exibir o cálculo da média com duas casas decimais.
+
+# Entrada / Saída
+
+```
+Entrada: 
+A
+8.0
+7.0
+6.0
+
+Saída:
+Média 7.00
+```
+
+```
+Entrada:
+P
+8.0
+7.0
+6.0
+
+Saída:
+Média 6.87
+```

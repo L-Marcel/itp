@@ -13,3 +13,21 @@ Por exemplo, 140 e 195 são colegas, pois a soma dos divisores próprios de 140 
 O seu programa deve ler dois inteiros (suponha que sejam sempre diferentes) e escrever S caso sejam colegas e N caso contrário.​
 
 Além disso seu programa deve utilizar duas funções: uma para somar os divisores próprios de um número e outra para retornar se dois números são colegas ou não.
+
+# Entrada / Saída
+
+```
+Entrada: 
+1 2
+
+Saída:
+S
+```
+
+```
+Entrada:
+6 8
+
+Saída:
+S
+```

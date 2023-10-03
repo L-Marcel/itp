@@ -50,3 +50,23 @@ Cifragem:
 
 Observe que está sendo usado o vetor S para o cálculo de substituição. 
 Obs.: Este algoritmo é conhecido como Cifra de Vigenère. Por mais de 300 anos foi chamado de "le chiffre indéchiffrable" (a cifra indecifrável).
+
+# Entrada / Saída
+
+```
+Entrada: 
+1357
+QUE A FORCA ESTEJA COM VOCE.
+
+Saída:
+RXJ6B2KVSFF6FVYLKD4JPP4?PFJ3
+```
+
+```
+Entrada:
+1977
+ALIANCA REBELDE, AQUI E ROGUE ONE. TRANSMITINDO PLANOS DE PROJETO DA ESTRELA DA MORTE. QUE A FORCA ESTEJA CONOSCO.
+
+Saída:
+BUPHOLH6SNILMML40JX,J8L6SXN,F8VUF56.SJUZNR.POMV6QUHUP,6KF8WYPSL.P8KH0NZ.SNSH0MH6NXY.F56XVN6H0OVYDJ6LT?LQB8JVOXZJP5
+```

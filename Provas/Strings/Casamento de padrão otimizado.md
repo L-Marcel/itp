@@ -38,4 +38,30 @@ A linha final da saída é informando se não houve casamento ("Não achei o pad
 
 Obs: Existem algoritmos de busca por padrão bem mais sofisticados do que a ideia apresentada aqui, mas alguns deles usam recursos similares, como o "índice da última ocorrência" dos caracteres do texto no padrão para realizar os saltos.
 
-Obs: Nos testes, é garantido que nenhum texto será maior que 50 caracteres. 
+Obs: Nos testes, é garantido que nenhum texto será maior que 50 caracteres.
+
+# Entrada / Saída
+
+```
+Entrada: 
+ACACAGTAC
+ACAG
+
+Saída:
+A C A C não
+C não
+A C A G sim
+Achei o padrão no índice 2
+```
+
+```
+Entrada:
+ACATACATACAG
+ACAG
+
+Saída:
+A C A T não
+A C A T não
+A C A G sim
+Achei o padrão no índice 8
+```

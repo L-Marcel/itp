@@ -73,3 +73,23 @@ Decifragem da Mensagem:
 Obs.1: Este algoritmo de cifragem, conhecido como Cifra de Vigenère, foi considerado indecifrável por mais de 300 anos. No entanto, Charles Babbage, inventor do primeiro computador, conseguiu superá-lo utilizando técnicas de cripto-análise. 
 
 Obs.2: A técnica de utilizar parte conhecida da mensagem original para decifrar um código é chamada de Ataque de Texto Plano Conhecido (do inglês known-plaintext attack - KPA). Esta mesma estratégia foi utilizada por Alan Turing para decodificar as mensagens nazistas geradas a partir da máquina Enigma, conforme pode ser observado (com algumas adaptações) no filme "O Jogo da Imitação".
+
+# Entrada / Saída
+
+```
+Entrada: 
+RXJ6B2KVSFF6FVYLKD4JPP4?PFJ3
+
+Saída:
+1357
+QUE A FORCA ESTEJA COM VOCE.
+```
+
+```
+Entrada:
+O IRPERNO EXTA HONSYRUISDO ZMA SOVA4ESTWELA4DA RORTJ. QZE A4FORHA EXTEJF COR VOHE.
+
+Saída:
+0005
+O IMPERIO ESTA CONSTRUINDO UMA NOVA ESTRELA DA MORTE. QUE A FORCA ESTEJA COM VOCE.
+```

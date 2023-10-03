@@ -13,3 +13,36 @@ Por exemplo, digamos que apenas três amigos participaram do bolão. O 1º deles
 Porém, se não houver aposta ganhadora, o dinheiro da bebida e petiscos (10%) será reservado e o restante é distribuído para todos os apostadores seguindo a proporção de suas apostas. Por exemplo, se seus amigos fizeram as apostas indicadas no parágrafo anterior, mas o jogador a ganhar a Bola de Ouro foi o jogador 1 (ou seja, nenhuma aposta vencedora), então o apostador 1 receberá de volta R$ 90, o apostador 2 R$ 45 e o 3 R$ 31, restando novamente R$ 19 para os comes e bebes.
 
 Seu programa deverá enviar para a saída padrão esses valores, seguindo o formado apresentado nos exemplos e considerando que os índices dos apostadores seguem a ordem em que eles apostaram, começando do índice 1. Assim, "Apostador 1" foi quem fez a 1ª aposta, "Apostador 2" a 2ª e assim por diante.
+
+# Entrada / Saída
+
+```
+Entrada: 
+3
+100 15
+50 10
+35 15
+15
+
+Saída:
+Total: R$ 185
+Apostador 1: R$ 123
+Apostador 3: R$ 43
+Bebidas e petiscos: R$ 19
+```
+
+```
+Entrada:
+3
+100 15
+50 10
+35 15
+1
+
+Saída:
+Total: R$ 185
+Apostador 1: R$ 90
+Apostador 2: R$ 45
+Apostador 3: R$ 31
+Bebidas e petiscos: R$ 19
+```

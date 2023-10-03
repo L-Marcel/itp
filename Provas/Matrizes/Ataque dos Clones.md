@@ -15,3 +15,35 @@ A partir daí, seu programa deve ler N x M valores inteiros, representando os í
 Podemos ver que houve um ataque na 2° linha e na 2º coluna do mapa, onde o valor é 8, porque é maior do que todos os oito valores em volta. Todo mapa possui pelo menos uma bomba, e não há bombas em posições adjacentes, porque o império é poderoso mas precisa economizar no arsenal.
 
 Seu programa deverá identificar no mapa e imprimir os locais onde as bombas caíram, e uma mensagem "Descanse na força..." quando o Jedi for atingido por uma bomba, e "Ao resgate!" quando ele sobreviver aos ataques. Observe os exemplos de entrada e saída para ver o formato correto para impressão dos resultados.
+
+# Entrada / Saída
+
+```
+Entrada: 
+3 3
+1 1
+2 3 3
+1 8 4
+3 1 2
+
+Saída:
+Local 1: 2 2
+Ao resgate!
+```
+
+```
+Entrada:
+5 5
+5 3
+1 1 2 7 11
+8 8 8 9 9
+8 8 8 10 3
+8 8 8 5 -1
+3 7 9 -2 4
+
+Saída:
+Local 1: 1 5
+Local 2: 3 4
+Local 3: 5 3
+Descanse na Força...
+```

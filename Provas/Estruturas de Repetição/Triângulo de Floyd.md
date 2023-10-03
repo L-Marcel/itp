@@ -6,10 +6,13 @@ Para essa questão é necessário pesquisar na função printf, como inserir os 
 
 Para verificar se sua resposta está correta sugiro o site  https://linediff.com/, lá Você consegue comparar os resultados.
 
-### Exemplo: 
+# Entrada / Saída
 
-Com o número 10 a saída espera é:
+```
+Entrada: 
+10
 
+Saída:
 1
 
 2 3 
@@ -29,3 +32,12 @@ Com o número 10 a saída espera é:
 37 38 39 40 41 42 43 44 45 
 
 46 47 48 49 50 51 52 53 54 55
+```
+
+```
+Entrada:
+0
+
+Saída:
+Você entrou com 0, tente de novo na próxima
+```

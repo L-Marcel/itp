@@ -36,3 +36,30 @@ A melhor area para exploracao eh X Y com valor M, onde X e Y são as posições 
 Para o exemplo acima, a saída do seu programa seria:
 
 A melhor area para exploracao eh 2 2 com valor 0
+
+# Entrada / Saída
+
+```
+Entrada: 
+4 4 10
+1 1 1 3
+1 1 1 1
+1 1 1 2
+5 1 1 1
+
+Saída:
+A melhor area para exploracao eh 2 2 com valor 0
+```
+
+```
+Entrada:
+5 5 68
+9 7 12 4 -30
+18 8 50 25 28
+7 5 1 0 15
+2 30 27 8 11
+1 17 0 1 3
+
+Saída:
+A melhor area para exploracao eh 3 3 com valor 2
+```

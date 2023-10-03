@@ -7,3 +7,24 @@ Para isso, você irá desenvolver um programa que analisa as inscrições de cad
 O programa deve apresentar como saída a quantidade de total de atletas em cada tipo de prova na seguinte ordem: provas de corrida; provas de salto e provas de lançamento. Logo em seguida deve ser apresentado a quantidade total de atletas em todas as provas.
 
 Observe o formato da entrada e saída padrão para ver como esses dados serão inseridos no programa.
+
+# Entrada / Saída
+
+```
+Entrada: 
+1
+S S S C L L F
+
+Saída:
+1 3 2 6
+```
+
+```
+Entrada:
+2
+S S S F
+C L F
+
+Saída:
+1 3 1 5
+```

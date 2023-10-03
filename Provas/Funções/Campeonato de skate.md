@@ -7,3 +7,21 @@ Por exemplo, suponha que o skatista pontuou 3, 7 e 2 no primeiro dia, 3, 4 e 4 n
 Seu programa deverá ler 18 números: os 9 scores do skatista A, seguidos dos 9 scores do skatista B. O programa deve escrever "A" se o score final de A foi maior, "B" se tiver sido o de B ou "empate" se ocorrer um empate.
 
 Para resolver essa questão, seu programa deve fazer bom uso de funções.​
+
+# Entrada / Saída
+
+```
+Entrada: 
+9 0 2 1 9 8 1 1 0 5 3 2 6 2 4 1 5 7
+
+Saída:
+B
+```
+
+```
+Entrada:
+3 10 6 5 7 2 6 1 8 8 3 4 2 6 1 0 1 2
+
+Saída:
+A
+```
