@@ -22,7 +22,9 @@ Img createImg(int r, int c, int matrix[r][c]) {
   return *img;
 };
 
-Img reflects(Img imgIn, Img imgOut) {
+Img reflects(Img imgIn) {
+  Img imgOut = createImg(imgIn.row, imgIn.columns, imgIn.matrix);
+  
   for(int i = 0; i < imgIn.row; i++) {
     for(int j = 0; j < imgIn.columns; j++) {
       if(i >= imgIn.row / 2) {
@@ -49,9 +51,7 @@ int main() {
   };
 
   Img imgIn = createImg(r, c, matrix);
-  Img imgOut = createImg(r, c, matrix);
-
-  imgOut = reflects(imgIn, imgOut);
+  Img imgOut = reflects(imgIn);
 
   printf("%d %d\n", r, c);
   for(int i = 0; i < r; i++) {
