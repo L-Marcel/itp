@@ -8,7 +8,7 @@ Ele lhe deu a tarefa de criar um programa que guardasse a lista de pessoas que e
 
 Construa sua solução declarando e usando pelo menos um tipo estruturado criado por você.
 
-# Tipo de entrada:
+## Tipo de entrada
 
 Um inteiro N, seguido de N linhas (até o fim da entrada) que podem estar em um desses 3 formatos:
 
