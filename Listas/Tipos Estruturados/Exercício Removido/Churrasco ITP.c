@@ -7,8 +7,7 @@
 
 // Sim, tinha como fazer de forma bem mais
 // simples... Eu que aproveitei para treinar
-// ponteiros & lista encadeada já que não vale
-// ponto algum essa questão
+// ponteiros & lista encadeada
 
 typedef struct {
   char name[30];

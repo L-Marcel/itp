@@ -1,4 +1,4 @@
-# Churrasco ITP
+# Churrasco ITP - Removido da lista
 
 A turma de ITP, vai fazer um churrasco de final de ano, mas a comissão organizadora está com muita dificuldade de dividir os gastos de forma correta para todos os participantes. Para ajudar, faça um programa que receba a lista de itens para o churrasco, modelando em structs, e faça a divisão pela quantidade de participantes.
 O programa deverá receber uma quantidade variável de itens e deve selecionar a quantidade de pessoas para ratear o churrasco. A entrada deverá ser da seguinte forma:
