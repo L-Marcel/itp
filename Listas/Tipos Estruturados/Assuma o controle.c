@@ -11,13 +11,13 @@ typedef struct {
 
 typedef struct {
   int length;
-  Worker* workers;
+  Worker** workers;
 } WorkersList;
 
 WorkersList* createList() {
   WorkersList* list = malloc(sizeof(WorkersList));
   list -> length = 0;
-  list -> workers = calloc(0, sizeof(Worker));
+  list -> workers = calloc(0, sizeof(Worker*));
   return list;
 };
 
@@ -29,17 +29,17 @@ Worker* createWorker(char name[30]) {
 
 void expand(WorkersList* list) {
   list -> length++;
-  list -> workers = realloc(list -> workers, sizeof(Worker) * (list -> length));
+  list -> workers = realloc(list -> workers, sizeof(Worker*) * (list -> length));
 };
 
 void reduce(WorkersList* list) {
   list -> length--;
-  list -> workers = realloc(list -> workers, sizeof(Worker) * (list -> length));
+  list -> workers = realloc(list -> workers, sizeof(Worker*) * (list -> length));
 };
 
 int workerAlreadyInList(WorkersList* list, char name[30]) {
   for(int i = 0; i < list -> length; i++) {
-    if(strcmp(list -> workers[i].name, name) == 0) {
+    if(strcmp(list -> workers[i] -> name, name) == 0) {
       return i;
     };
   };
@@ -50,7 +50,7 @@ int workerAlreadyInList(WorkersList* list, char name[30]) {
 void addWorkerInList(WorkersList* list, char name[30]) {
   if(workerAlreadyInList(list, name) == -1) {
     expand(list);
-    list -> workers[list -> length - 1] = *createWorker(name);
+    list -> workers[list -> length - 1] = createWorker(name);
   };
 };
 
@@ -69,7 +69,7 @@ void removeWorkerInList(WorkersList* list, char name[30]) {
 void printWorkers(WorkersList* list) {
   printf("Atualmente trabalhando:\n");
   for(int i = 0; i < list -> length; i++) {
-    printf("%s\n", list -> workers[i].name);
+    printf("%s\n", list -> workers[i] -> name);
   };
   printf("\n");
 };
