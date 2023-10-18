@@ -6,13 +6,15 @@ typedef struct {
   double values[];
 } vector;
 
-void *alloc(int size) {
-  return malloc(sizeof(vector) + (sizeof(double) * size));
+vector* createVector(int size) {
+  vector* vec = malloc(sizeof(vector) + (sizeof(double) * size));
+  vec -> size = size;
+  return vec;
 };
 
-vector* sumVectors(int size, vector *p, vector *q) {
-  vector* result = alloc(size);
-  result -> size = size;
+vector* sumVectors(vector *p, vector *q) {
+  int size = p -> size;
+  vector* result = createVector(size);
   
   for(int i = 0; i < size; i++) {
     result -> values[i] = (p -> values[i] + q -> values[i]);
@@ -21,8 +23,9 @@ vector* sumVectors(int size, vector *p, vector *q) {
   return result;
 };
 
-double internalProdVectors(int size, vector *p, vector *q) {
+double internalProdVectors(vector *p, vector *q) {
   double result = 0;
+  int size = p -> size;
 
   for(int i = 0; i < size; i++) {
     result += (p -> values[i] * q -> values[i]);
@@ -35,11 +38,8 @@ int main() {
   int size;
   scanf("%d", &size);
 
-  vector *p = alloc(size);
-  p -> size = size;
-
-  vector *q = alloc(size);
-  q -> size = size;
+  vector *p = createVector(size);
+  vector *q = createVector(size);
 
   for(int i = 0; i < size * 2; i++) {
     double nextValue;
@@ -52,9 +52,9 @@ int main() {
     };
   };
 
-  vector *sumResult = sumVectors(size, p, q);
+  vector *sumResult = sumVectors(p, q);
 
-  double internalProdResult = internalProdVectors(size, p, q);
+  double internalProdResult = internalProdVectors(p, q);
 
   for(int i = 0; i < size; i++) {
     printf("%.2lf ", sumResult -> values[i]);
