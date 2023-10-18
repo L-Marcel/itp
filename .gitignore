@@ -8,5 +8,6 @@ Provas/**/*.c
 !Provas/Matrizes/*.c
 !Provas/Vetores/*.c
 !Provas/Strings/*.c
+!Provas/Tipos Estruturados/*.c
 
 !Provas/Unidade 1/*.c
