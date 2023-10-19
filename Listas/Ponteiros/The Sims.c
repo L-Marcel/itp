@@ -117,8 +117,8 @@ int simula_sims(int* fome, int* sede, int* banheiro, int* sono, int* tedio) {
     int operacao = *(operacoes + i + 1);
     int status_atual = *(operacoes + i + 2);
 
-    printf("Acao: %s\n", acao);
-    printf("Operacao: %s (%s) (%d) (%d)\n", status_messages[status_atual], operacao == aumentar? "aumentar":"diminuir", qtd, *all_status[status_atual]);
+    //printf("Acao: %s\n", acao);
+    //printf("Operacao: %s (%s) (%d) (%d)\n", status_messages[status_atual], operacao == aumentar? "aumentar":"diminuir", qtd, *all_status[status_atual]);
   
     if(operacao == aumentar) {
       ret = aumentar_status(all_status[status_atual], qtd, status_atual);
