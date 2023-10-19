@@ -23,7 +23,7 @@ const char status_messages[5][2][12] = {
   { "tédio", "deprimido..." },
 };
 
-int aumentar_status(int* status, int qtd, int status_id) {
+int aumentar_status(int* status, int qtd, int status_id, bool pode_imprimir) {
   *status = (*status + qtd);
   
   if(*status >= 100) {
@@ -31,20 +31,20 @@ int aumentar_status(int* status, int qtd, int status_id) {
   };
 
   if(*status <= 0) {
-    printf("Game Over! Morreu %s\n", status_messages[status_id][1]);
+    if(pode_imprimir) printf("Game Over! Morreu %s\n", status_messages[status_id][1]);
     *status = 0;
     return 0;
   };
 
   if(*status <= 15) {
-    printf("Alerta: %s está com valor baixo\n", status_messages[status_id][0]);
+    if(pode_imprimir) printf("Alerta: %s está com valor baixo\n", status_messages[status_id][0]);
   };
 
   return 1;
 };
 
-int diminuir_status(int* status, int qtd, int status_id) {
-  return aumentar_status(status, -qtd, status_id);
+int diminuir_status(int* status, int qtd, int status_id, bool pode_imprimir) {
+  return aumentar_status(status, -qtd, status_id, pode_imprimir);
 };
 
 int simula_sims(int* fome, int* sede, int* banheiro, int* sono, int* tedio) {
@@ -73,9 +73,9 @@ int simula_sims(int* fome, int* sede, int* banheiro, int* sono, int* tedio) {
     int operacoes_da_acao[5][3] = {
       { 30, aumentar, SEDE },
       { 5, dimiuir, FOME },
-      { 20, dimiuir, BANHEIRO },
       { 5, dimiuir, SONO },
       { 5, dimiuir, TEDIO }
+      { 20, dimiuir, BANHEIRO },
     };
 
     operacoes = (int*) operacoes_da_acao;
@@ -83,8 +83,8 @@ int simula_sims(int* fome, int* sede, int* banheiro, int* sono, int* tedio) {
     int operacoes_da_acao[5][3] = {
       { 80, aumentar, SONO },
       { 30, aumentar, TEDIO },
-      { 30, dimiuir, SEDE },
       { 30, dimiuir, FOME },
+      { 30, dimiuir, SEDE },
       { 30, dimiuir, BANHEIRO },
     };
 
@@ -102,33 +102,35 @@ int simula_sims(int* fome, int* sede, int* banheiro, int* sono, int* tedio) {
   } else if(strcmp(acao, "jogar videogame") == 0) {
     int operacoes_da_acao[5][3] = {
       { 80, aumentar, TEDIO },
-      { 20, dimiuir, SEDE },
-      { 20, dimiuir, BANHEIRO },
-      { 20, dimiuir, SONO },
       { 20, dimiuir, FOME },
+      { 20, dimiuir, SEDE },
+      { 20, dimiuir, SONO },
+      { 20, dimiuir, BANHEIRO },
     };
 
     operacoes = (int*) operacoes_da_acao;
   };
 
+  bool morreu = false;
   for(int i = 0; i < 15; i += 3) {
     int ret = 1;
     int qtd = *(operacoes + i);
     int operacao = *(operacoes + i + 1);
     int status_atual = *(operacoes + i + 2);
-
-    //printf("Acao: %s\n", acao);
-    //printf("Operacao: %s (%s) (%d) (%d)\n", status_messages[status_atual], operacao == aumentar? "aumentar":"diminuir", qtd, *all_status[status_atual]);
   
     if(operacao == aumentar) {
-      ret = aumentar_status(all_status[status_atual], qtd, status_atual);
+      ret = aumentar_status(all_status[status_atual], qtd, status_atual, !morreu);
     } else {
-      ret = diminuir_status(all_status[status_atual], qtd, status_atual);
+      ret = diminuir_status(all_status[status_atual], qtd, status_atual, !morreu);
     };
 
     if(ret == 0) {
-      return 0;
+      morreu = true;
     };
+  };
+
+  if(morreu) {
+    return 0;
   };
 
   return 1;
