@@ -18,7 +18,7 @@ int compute_votes(
 );
 ```
 
-Escreva um programa que utilize esta função. Seu programa deve receber inicialmente um valor N, com a quantidade de chapas, seguido de N linhas. Cada linha contém um valor inteiro, com o identificador da chapa, e uma string (sem espaços em branco) com o nome da chapa. Depois, o programa receberá um valor M, com a quantidade de votos, seguido de M valores inteiros positivos. Cada valor representando uma chapa da eleição. O programa deve, em seguida, imprimir a quantidade de votos que cada chapa obteve, a quantidade de votos válidos e os dados referentes às duas chapas mais votadas.
+Escreva um programa que utilize esta função. Seu programa deve receber inicialmente um valor N, com a quantidade de chapas, seguido de N linhas. Cada linha contém um valor inteiro, com o identificador da chapa, e uma string (sem espaços em branco) com o nome da chapa. Depois, o programa receberá um valor M, com a quantidade de votos, seguido de M valores inteiros positivos. Cada valor representando uma chapa da eleição. O programa deve, em seguida, imprimir a quantidade de votos, de votos válidos e os dados referentes às duas chapas mais votadas.
 
 ​Obs: É garantido, nos casos de teste, que não haja empates entre os primeiros colocados (sempre haverá um vencedor e um vice). Portanto, tranquilize sua família que isso não é um bug do software :-). É apenas uma característica dos dados tratados.
 
