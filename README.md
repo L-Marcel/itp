@@ -6,7 +6,5 @@ Todas as questões tem um arquivo `.md` contendo o enunciado delas, mas deixarei
 
 As minhas respostas serão enviadas para o `GitHub` assim que o período das provas passar e forem liberadas as correções.
 
-Não leve muito a sério o que estiver na pasta `Playground`.
-
 > Tudo isso foi feito na segunda metade de 2023.
 
