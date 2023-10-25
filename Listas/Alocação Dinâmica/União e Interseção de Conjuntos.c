@@ -32,9 +32,6 @@ void adicionar_no_conjunto(Conjunto* conjunto, int numero) {
 
 void apagar_conjunto(Conjunto* conjunto) {
   free(conjunto -> valores);
-  conjunto -> valores = NULL;
-
-  free(conjunto);
   conjunto = NULL;
 };
 
@@ -69,9 +66,9 @@ Conjunto uniao(Conjunto a, Conjunto b) {
 Conjunto intersecao(Conjunto a, Conjunto b) {
   Conjunto c = criar_conjunto();
 
-  for(int i = 0; i < a.tamanho; i++) {
-    if(pertence_ao_conjunto(&b, a.valores[i])) {
-      adicionar_no_conjunto(&c, a.valores[i]);
+  for(int i = 0; i < b.tamanho; i++) {
+    if(pertence_ao_conjunto(&a, b.valores[i])) {
+      adicionar_no_conjunto(&c, b.valores[i]);
     };
   };
 
@@ -80,9 +77,14 @@ Conjunto intersecao(Conjunto a, Conjunto b) {
 
 void imprimir_conjunto(Conjunto a, char identificao[15]) {
   printf("%s == {", identificao);
-
+    
+  if(a.tamanho == 0) {
+    printf("vazio}\n");
+    return;
+  };
+    
   for(int i = 0; i < a.tamanho; i++) {
-    printf("%d%c\n", a.valores[i], i == a.tamanho - 1? '}':' ');
+    printf("%d%s", a.valores[i], i == a.tamanho - 1? "}\n":" ");
   };
 };
 
@@ -101,7 +103,7 @@ int main() {
 
   imprimir_conjunto(c, "A união B");
   imprimir_conjunto(d, "A interseção B");
-
+ 
   apagar_conjunto(&c);
   apagar_conjunto(&d);
 
