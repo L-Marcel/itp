@@ -1,5 +1,7 @@
 output
 Provas/**/*.c
+Playground/**/*.c
+
 .vscode/settings.json
 
 !Provas/Estruturas Condicionais/*.c
