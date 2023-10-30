@@ -11,5 +11,6 @@ Playground/**/*.c
 !Provas/Vetores/*.c
 !Provas/Strings/*.c
 !Provas/Tipos Estruturados/*.c
+!Provas/Ponteiros/*.c
 
 !Provas/Unidade 1/*.c
