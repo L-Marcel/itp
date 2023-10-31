@@ -1,6 +1,6 @@
 # Sudoku
 
-| A mais difícil até agora
+> A mais difícil dessas listas (provas)
 
 O jogo de Sudoku é um clássico para os amantes de puzzle!
 
@@ -15,3 +15,45 @@ Faça um programa que receba um jogo de sudoku parcialmente resolvido, e imprima
 A entrada será uma matriz 9x9 contendo números para valores inicialmente preenchidos, e asteriscos representando as casas não preenchidas.
 
 Observe atentamente a formatação dos testes para fazer a entrada e saída do seu programa.
+
+# Entrada / Saída
+
+```
+Entrada:
+1***79**8
+*9*261**5
+****8*219
+64****792
+521*****6
+98**2***1
+**493*6**
+***817*24
+879*****3	
+
+Saída:
+132579468
+498261375
+756384219
+643158792
+521793846
+987426531
+214935687
+365817924
+879642153
+```
+
+```
+Entrada:
+1***79**8
+*9*261**5
+****8*219
+64****792
+521*****6
+98**2***1
+**493*6**
+***817*24
+879***135
+
+Saída:
+Não tem solução!
+```

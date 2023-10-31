@@ -12,3 +12,21 @@ Para converter um número decimal para binário, você realiza uma sequência de
 O valor binário é obtido a partir dos restos da divisão, tomados na ordem do último ao primeiro:
 
 10 em binário é 1010.
+
+# Entrada / Saída
+
+```
+Entrada:
+10	
+
+Saída:
+1010
+```
+
+```
+Entrada:
+3
+
+Saída:
+11
+```
