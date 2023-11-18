@@ -25,7 +25,7 @@ Entrada:
 2
 
 Saída:
-	Move o disco em 1 para 2
+Move o disco em 1 para 2
 Move o disco em 1 para 3
 Move o disco em 2 para 3
 Total de movimentos: 3
