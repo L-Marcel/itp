@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef enum {
-  true = 1,
-  false = 0
-} bool;
-
 int factorial(int a) {
   if(a <= 0) return 1;
   return a * factorial(a - 1);
@@ -26,7 +21,7 @@ void tree(int node, int start) {
   tree(node, start + 1);
 };
 
-bool main() {
+int main() {
   int n;
   scanf("%d", &n);
   getchar();
