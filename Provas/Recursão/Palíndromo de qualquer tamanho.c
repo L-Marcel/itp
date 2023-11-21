@@ -37,7 +37,7 @@ int main() {
   char texto[20];
   fgets(texto, 20, stdin);
 
-  if(texto[strlen(texto)- 1] == '\n') {
+  if(texto[strlen(texto) - 1] == '\n') {
     //vscode
     texto[strlen(texto) - 1] = '\0';
   } else {

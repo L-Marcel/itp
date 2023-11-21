@@ -29,7 +29,6 @@ int moves(int r, int c, int map[r][c], int i, int j, enum move last_move) {
     count += moves(r, c, map, i, j - 1, LEFT);
   };
 
-
   //right
   if(
     j < c - 1 && 

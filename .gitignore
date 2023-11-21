@@ -1,6 +1,6 @@
 output
 Provas/**/*.c
-Playground/**/*.c
+Playground/**/*.exe
 
 .vscode/settings.json
 
