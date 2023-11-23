@@ -13,5 +13,6 @@ Playground/**/*.exe
 !Provas/Tipos Estruturados/*.c
 !Provas/Ponteiros/*.c
 !Provas/Recursão/*.c
-
 !Provas/Unidade 1/*.c
+
+SGBD-ITP
