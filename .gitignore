@@ -11,6 +11,7 @@ Playground/**/*.exe
 !Provas/Vetores/*.c
 !Provas/Strings/*.c
 !Provas/Tipos Estruturados/*.c
+!Provas/Alocação Dinâmica/*.c
 !Provas/Ponteiros/*.c
 !Provas/Recursão/*.c
 !Provas/Unidade 1/*.c
