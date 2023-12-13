@@ -15,5 +15,6 @@ Playground/**/*.exe
 !Provas/Ponteiros/*.c
 !Provas/Recursão/*.c
 !Provas/Unidade 1/*.c
+!Provas/Unidade 2/*.c
 
 SGBD-ITP
