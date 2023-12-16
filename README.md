@@ -8,3 +8,6 @@ As minhas respostas serão enviadas para o `GitHub` assim que o período das pro
 
 > Tudo isso foi feito na segunda metade de 2023.
 
+# Projeto final
+
+O repositório do projeto final foi separado desse e se encontra disponível [aqui](https://github.com/L-Marcel/sgbd-itp). Esse eu fiz em conjunto com `Natham Fernandes`.
